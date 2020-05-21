@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
-const SettingsStack = createStackNavigator();
 
 class yq extends Component{
     render(){
@@ -43,14 +42,6 @@ class bx extends Component {
         this.setState({albums:data})
         // console.log(id)
     }
-    // _go=()=>{
-    //     // console.log(111)
-    //     // let params = {screen:'yq',params:{uname:'11111'}}//传参
-    //     // this.props.navigation.navigate('yq',params)//跳转
-    //     let params = {name:11}
-    //     this.props.navigation.navigate('yq',params)
-    //     // console.log(params)
-    // }
     _go(item){
         let params = item
         this.props.navigation.navigate('yq',params)
@@ -70,7 +61,7 @@ class bx extends Component {
                             <Text style={styles.button}>删除</Text>
                         </TouchableHighlight>
                     </View> 
-                    {/* <Button onPress={()=>this._del(item.id)} title="删除"></Button> */}
+
                 </View>
             </TouchableHighlight>   
         )
