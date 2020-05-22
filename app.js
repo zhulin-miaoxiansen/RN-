@@ -44,11 +44,11 @@ class Home extends Component {
                 <View style={{height:90,flexDirection:"row",marginTop:0}}>
                 <Text>{index+1}</Text>
                     <View style={{justifyContent:"flex-start", flexDirection: "row",alignItems:"center"}}>
-                        <Image style={{width:80,height:80,marginRight:30,marginTop:0}} source={{uri:item.img}}/>
+                        <Image style={{width:70,height:70,marginRight:30,marginTop:0}} source={{uri:item.img}}/>
                     </View>
                     <View style={{flexDirection: "row",alignItems:"center",justifyContent:'space-between',flexGrow:1}}>
                         <Text>{item.name}</Text>
-                        <TouchableHighlight style={{width:50,borderRadius:5}} underlayColor='#blue' activeOpacity={0.5} 
+                        <TouchableHighlight style={{width:45,borderRadius:5}} underlayColor='#blue' activeOpacity={0.5} 
                             onPress={()=>this._del(item.id)}>
                             <Text style={[styles.button,{color:"#CCC"}]}>删除</Text>
                         </TouchableHighlight>
